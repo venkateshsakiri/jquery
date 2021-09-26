@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      /*  let wishMe=function(name,age){
+            let message = `Hello ${name} you are ${age} yrs old`;
+            console.log(message);
+        }
+        wishMe('venkatesh',25);
+
+        let greetMe=function(){
+            console.log("venkateswarlu sakiri");
+        }
+        greetMe();
+
+        let sum = function(a,b){
+            let result = a+b;
+            return result;
+        }
+        let output = sum(8,46);
+        console.log(output);
+
+
+        let printObject = function(str){
+            console.log(str);
+        }
+        printObject({name:'venkatesh',age:25,ph_no:9966769943});
+
+
+        let mobile = {
+            brand:'apple',
+            color:'silver',
+            price:35000
+        };
+        printObject(mobile);
+
+
+        let printArray = function(array){
+            let result ='';
+            for(let index in array){
+                result+= `Index:${index}=>value: ${array[index]}\n`;
+            }
+            console.log(result);
+        }
+        printArray([10,20,30,360,212,50,55]);
+
+        let colors = ['white','black','red','yellow'];
+        printArray(colors);
+
+        let student = {
+            firstName:'venkatseh',
+            lastName:'sakiri',
+            fullName:function(){
+                return 'venkatesh sakiri';
+            }
+        };
+        console.log(student.fullName());
+
+           
+        let outerFn = function(){
+            console.log('I am an Outer Function');
+            let innerFn = function(){
+                console.log('I am an inner Function')
+            };
+            innerFn();
+        };
+        outerFn();
+        // twisted function
+        let twistedFn = function(){
+            let name = 'john';
+            let printStudent = function(){
+                let student = {
+                    name:'venkatesh',age:25,course:'civil'
+                };
+                return student;
+            };
+            return printStudent;
+        };
+        let innerFn = twistedFn();
+        let studentObj= innerFn();
+        console.log(studentObj.course);
+
+
+        // preparing chicken curry
+
+        let glassBowl = function(rawChicken,masala){
+            let marinatedChicken = `MIXING : (${rawChicken} + ${masala})`;
+            return marinatedChicken;
+        };
+        let cookingBowl = function(marinatedChicken,water){
+            let cookedChicken =`COOKING (${marinatedChicken} + ${water})`;
+            return cookedChicken; 
+        };
+        let eatingPlate = function(cookedChicken,rice){
+            let eating = `EATING (${cookedChicken} + ${rice})`;
+            console.log(eating);
+        };
+
+        let rawChicken = '3kg chicken';
+        let masala = 'Garlic,pepper,salt';
+        let marinatedChicken = glassBowl(rawChicken,masala);
+        let water ='1Ltr water';
+        let cookedChicken=cookingBowl(marinatedChicken,water); 
+        let rice = '1kg rice';
+        eatingPlate(cookedChicken,rice);
+         */
+
+
+           let sqrt = Math.sqrt(144);
+           console.log(`Sqrt of 144 is :${sqrt}`);
+
+
+           let pow = Math.pow(2,5);
+           console.log(`2^ of 5 is:${pow}`);
+
+            let min = Math.min(1,2,2,3,45,54,5,4,5,5);
+            console.log(min);
+            let max = Math.max(1,2,2,3,45,54,5,4,5,5);
+            console.log(max);
+
+            let random = Math.random();
+            console.log(random);
+            let round = Math.round(Math.random()*10000);
+            console.log(round); 
+
+            let date = new Date();
+            console.log(date);
+            let currentDate= new Date().toLocaleDateString();
+            console.log(currentDate);
+
+            let currentTime=new Date().toLocaleTimeString();
+            console.log(currentTime);
+
+            // usa time
+
+            let options={timeZone:'America/New_York'};
+            let usaDate = new Date().toLocaleDateString('en-US',options);
+            console.log(usaDate);
+            let usaTime = new Date().toLocaleTimeString('en-US',options);
+            console.log(usaTime)
+
+            // today
+            let today = new Date().getMonth();
+            console.log(today);
+
+              
+
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

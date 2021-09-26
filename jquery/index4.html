@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function myFunction(){
+            const x = document.getElementById("value").value;
+            
+            if(x<35){
+                alert("Your failed the test");
+            }
+            else if(x>=35 && x<75){
+                alert("Your passed in the First class")
+            }
+            else if(x>=75 && x<=100){
+                alert("Congratulations You are passed in First class with distinction")
+            }
+            else{
+                alert("You Enter the Wrong input")
+            }
+        }
+    </script>
+    <input type="number" id="value" value="">
+    <input type="button" value="Enter" onclick="myFunction()">
+</body>
+</html>

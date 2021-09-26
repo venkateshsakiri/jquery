@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+       let student={
+           name:'venkatesh',
+           age:25,
+           place:'guntur',
+           education:'Btech'
+       };
+       console.log(student);
+
+       let studentStr=JSON.stringify(student);
+       console.log(studentStr);
+
+       let newStudents =JSON.parse(studentStr);
+       console.log(newStudents);
+
+
+//    examples.................................
+
+// 1.find the number of 'a' in the given string
+
+        let msg = 'venkateswarlu';
+        let findZeros = (str)=>{
+            let count = 0;
+            for(let i= 0;i<str.length-1;i++){
+                let char = str.charAt(i);
+                if(char === 'a' || char === '0'){
+                    count++;
+                }
+            }
+            return count; 
+        };
+        console.log(`The zeros in string is: ${findZeros(msg)}`);
+
+
+// 2.find the reverse string of the given string
+
+ msg = 'venkateswarlu';
+let reverseString = (str)=>{
+    let tempString = '';
+    for(let i = str.length-1;i>=0;i--){
+        let char = str.charAt(i);
+        tempString+=char;
+
+    }
+    return tempString;
+
+};
+console.log(`${msg} => ${reverseString(msg)}`);
+
+// 3. check the given string is palindrome or not
+/*let stri = prompt('Enter the string');
+ let isPalindrome = (str)=>{
+     if(str === reverseString(str)){
+         return true;
+     }
+     else{
+         return false;
+     }
+ };
+ console.log(`${stri} is Palindrome ? ${isPalindrome(stri)}`);
+*/
+
+//  4. to print the '*' in different ways
+  msg = 'venkateswarlu';
+  let triangleOne=(str)=>{
+      let tempStr ='';
+      for(i=1;i<=str.length;i++){
+          tempStr+=`${str.substr(0,i)} \n`;
+      }
+      return tempStr;
+  };
+  console.log(triangleOne(msg));
+
+
+    //  4. to print the '*' in different ways
+  msg = 'venkateswarlu';
+  let triangleTwo=(str)=>{
+      let tempStr ='';
+      for(i=0;i<=str.length-1;i++){
+          tempStr+=`${str.substr(i)} \n`;
+      }
+      return tempStr;
+  };
+  console.log(triangleTwo(msg));
+
+
+  //  4. to print the '*' in different ways
+  msg = 'venkateswarlu';
+  let triangleThree=(str)=>{
+      let tempStr ='';
+      for(i=str.length;i>=1;i--){
+          tempStr+=`${str.substr(0,i)} \n`;
+      }
+      return tempStr;
+  };
+  console.log(triangleThree(msg));
+
+
+  //  4. to print the '*' in different ways
+  msg = 'venkateswarlu';
+  let triangleFour=(str)=>{
+      let tempStr ='';
+      for(i=str.length-1;i>=0;i--){
+          tempStr+=`${str.substr(i)} \n`;
+      }
+      return tempStr;
+  };
+  console.log(triangleFour(msg));
+
+
+  
+
+
+
+
+
+
+
+   </script> 
+</body>
+</html>
